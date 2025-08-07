@@ -27,7 +27,7 @@ const Skills = () => {
 					<p className={styles.description}>
 					I always start by understanding what users need and what the business wants to achieve. 
 					From there, I create designs that are easy to use, look good, and actually help people. 
-					It's all about making things better for users and helping your product grow.
+					It&apos;s all about making things better for users and helping your product grow.
 						<br />
 						<br />
 						My design practice combines design thinking, user research, and

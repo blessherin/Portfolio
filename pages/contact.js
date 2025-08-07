@@ -5,7 +5,7 @@ import { Layout, SocialIcon, Subtitle } from "../components";
 import styles from "../styles/Contact.module.css";
 import { ButtonForm } from "../components/button/Button";
 
-const contact = () => {
+const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -136,4 +136,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
