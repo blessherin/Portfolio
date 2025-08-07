@@ -1,0 +1,191 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border: 6rem solid #98dcff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.figma, .bals, .canva, .frmr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 1.5rem;
+    background-color: var(--secondary-bg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.figma {
+    left: -7rem;
+    top: 0rem;
+}
+
+.bals {
+    right: -7rem;
+    top: 0rem;
+}
+
+.canva {
+    left: -7rem;
+    bottom: 0rem;
+}
+
+.frmr {
+    right: -7rem;
+    bottom: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .figma, .bals, .canva, .frmr {
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+    }
+
+    .figma {
+        left: -6rem;
+        top: -1rem;
+    }
+    
+    .bals {
+        right: -6rem;
+        top: -1rem;
+    }
+    
+    .canva {
+        left: -6rem;
+        bottom: -1rem;
+    }
+    
+    .frmr {
+        right: -6rem;
+        bottom: -1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .image {
+        border-width: 5rem;
+    }
+
+    .figma {
+        left: -5rem;
+        top: -3rem;
+    }
+    
+    .bals {
+        right: -5rem;
+        top: -3rem;
+    }
+    
+    .canva {
+        left: -5rem;
+        bottom: -3rem;
+    }
+    
+    .frmr {
+        right: -5rem;
+        bottom: -3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        border-width: 4.5rem;
+    }
+
+    .figma {
+        left: -4rem;
+        top: -3rem;
+    }
+    
+    .bals {
+        right: -4rem;
+        top: -3rem;
+    }
+    
+    .canva {
+        left: -4rem;
+        bottom: -3rem;
+    }
+    
+    .frmr {
+        right: -4rem;
+        bottom: -3rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .image {
+        border-width: 3.5rem;
+    }
+
+    .figma, .bals, .canva, .frmr {
+        width: 60px;
+        height: 60px;
+    }
+
+    .figma {
+        left: -2rem;
+        top: -3rem;
+    }
+    
+    .bals {
+        right: -2rem;
+        top: -3rem;
+    }
+    
+    .canva {
+        left: -2rem;
+        bottom: -3rem;
+    }
+    
+    .frmr {
+        right: -2rem;
+        bottom: -3rem;
+    }
+}

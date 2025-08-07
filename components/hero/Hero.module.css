@@ -1,0 +1,22 @@
+.hero {
+    padding: 12rem 1rem;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.hero .container {
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+}

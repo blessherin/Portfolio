@@ -1,0 +1,53 @@
+.socialIcon {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-bg);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icon i {
+    font-size: 1.8rem;
+    color: #98dcff;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+@media screen and (max-width: 624px) {
+    .icon {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .icon i {
+        font-size: 1.4rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+    
+
+}

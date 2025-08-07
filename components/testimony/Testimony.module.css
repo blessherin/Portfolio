@@ -1,0 +1,108 @@
+.testimony {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    margin-right: 5rem;
+}
+
+.imageContainer, .image {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.imageContainer {
+    position: relative;
+    flex: 1;
+}
+
+.imageContainer::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    background-color: gray;
+    z-index: -1;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+}
+
+.content {
+    flex: 2;
+}
+
+.content i {
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+.description {
+    margin: 1.2rem 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.name {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.role, .company {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.role {
+    margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .testimony {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimony {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imageContainer {
+        flex: 1;
+    }
+    .content {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .description {
+        font-size: 1rem;
+    }
+    
+    .name {
+        font-size: 1.2rem;
+    }
+    
+    .role {
+        font-size: 1rem;
+    }
+}

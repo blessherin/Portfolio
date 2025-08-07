@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.header {
+    height: 8rem;
+    background-color: #FCEEF5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding: .5rem 1rem;
+}
+
+.header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.header .brand {
+    color: #057ee6;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Russo One', sans-serif;
+}
+
+.header .nav, .header .show {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+
+.header .nav .menu, .header .show .menu {
+    color: var(--black);
+    font-size: 1.2rem;
+    position: relative;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.header .nav .menu::after, .header .show .menu::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    bottom: -.2rem;
+    border: none;
+    background-color: var(--white);
+    height: 2px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.header .nav .menu:hover::after, .header .show .menu:hover::after {
+    width: 100%;
+}
+
+.header .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobileIcon {
+    display: none;
+    color: var(--white);
+    opacity: .8;
+    background: var(--secondary-bg);
+    padding: .8rem 1rem .6rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.mobileIcon i {
+    font-size: 1.4rem;
+    color: #98dcff;
+}
+
+@media screen and (max-width: 1000px) {
+    .header .contact {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mobileIcon {
+        display: block;
+        z-index: 2;
+    }
+
+    .header .nav {
+        display: none;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+}
+
+    .header .show {
+        display: flex;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        z-index: 2;
+        background: #fde9ff;
+        padding: 2rem;
+        transition: all .8s ease;
+    }
+
+    .header .nav .menu {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .header .contact  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header .brand {
+        font-size: 1.6rem;
+    }
+    
+}

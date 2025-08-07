@@ -1,0 +1,15 @@
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wrap {
+    padding-bottom: 18rem;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 640px) {
+    .wrap {
+        padding-bottom: 20rem;
+    }
+}

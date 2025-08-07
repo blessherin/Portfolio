@@ -1,0 +1,92 @@
+.contact {
+    padding: 15rem 1rem 10rem 1rem;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.title {
+    margin: .8rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+.icons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form input, .form textarea {
+    outline: 0;
+    background-color: #F7FBFF;
+    border: 1px solid var(--primary);
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: var(--black);
+    opacity: .6;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .content {
+        border-bottom: 1px solid rgba(231, 231, 231, .1);
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .group {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+}
