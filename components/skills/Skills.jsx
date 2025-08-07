@@ -35,7 +35,7 @@ const Skills = () => {
 					</p>
 					<Button
 						target="_blank"
-						url="https://drive.google.com/file/d/1bxn9nq2KCdUCC2Ssyo7CSCb2DSGZSaXg/view?usp=drivesdk"
+						url="https://drive.google.com/file/d/1DFiy5FJz2xdLoqhZPLrRidpk851ngBPo/view?usp=sharing"
 						title="Download CV"
 						download
 					/>
